@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLogin</title>
+    <script>
+        function check(){
+         
+           var name=document.getElementById("admin").value;
+           var pad=document.getElementById("pass").value;
+           alert(name);
+           if(name=="admin"&&pad=="1234")
+           {
+              alert("logined successfully");
+           }
+           else{
+               alert("Invalid credentials");
+           }
+        }
+        
+    </script>
+    <style>
+        a{
+        text-align: center;
+        padding:5px;
+        margin: 6px;
+        color:rgb(255, 255, 255)
+    }
+    body{
+            
+            background-color: rgb(200, 88, 88);
+        }
+        nav{
+        text-align: center;
+        /* background-color:beige; */
+        
+        padding: 9px;
+        font-size: 30px;
+        ruby-span: inherit;
+    }
+    .nav-area{
+        float: right;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .nav-area li{
+        display: inline-block;
+    }
+    .nav-area li a {
+    color: rgb(3, 1, 1);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    }
+    .nav-area li a:hover{
+        background: rgb(243, 239, 239);
+        color: #333;
+    }
+   div{
+       margin-left: 15px;
+       font-size: 30px;
+   }
+   body{
+       background-image: url(login.jpeg);
+       height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+   }
+    </style>
+</head>
+<body>
+    <h1 style="margin-left: 20px; color: rgb(3, 8, 82);">Admin Login</h1>
+    <header>
+        <div class="wrapper">
+    <ul class="nav-area">
+<li><a href="./login.html">User login</a></li></a>
+   <li><a href="./form.html">Register</a></li></a>
+   <li><a href="./admin.html">Admin Login</a></li></a>
+   <li><a href="./about.html">About</a></li></a>
+    </ul>
+    </div></header>
+<div>
+    <form method="GET" action="./admin_Crud.html" >
+<p>Admin ID <input type="text" id="admin" placeholder="enter the ID"><br><p>
+Password  <input type="text" id="pass"placeholder="password"></p>
+<button onclick="check()">Submit</button></p> 
+</form>
+</div>
+</body>
+</html>
